@@ -1,0 +1,13 @@
+<template>
+<ol>
+    <li>咖啡</li>
+    <li>茶</li>
+    <li>可口可乐</li>
+    <li>橙汁</li>
+</ol>
+</template>
+<style>
+    ol>li{
+        color:red;
+    }
+</style>

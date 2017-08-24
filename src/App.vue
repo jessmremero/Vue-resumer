@@ -1,18 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <Topbar class="topbar"/>
+    <main>
+      <Editor class="editor"/>
+     
+      <Preview class="preview"/>
+    
+    </main>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
-
+import Topbar from './components/Topbar'
+import Editor from './components/Editor'
+import Preview from './components/Preview'
 export default {
-  name: 'app',
-  components: {
-    Hello
-  }
+   components: {
+   Topbar , Editor , Preview
+}
 }
 </script>
 
@@ -23,6 +28,30 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  display:flex;
+  height:100vh;
+  flex-direction: column;
+}
+.topbar{
+ background:red;
+}
+.editor{
+background:yellow;
+}
+.preview{
+background:green;
+}
+
+
+main{
+ display:flex;
+ flex:1;
+ 
+}
+main > .editor{
+  width:20em;
+}
+main > .preview{
+  flex:1;
 }
 </style>
