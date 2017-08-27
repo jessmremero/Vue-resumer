@@ -1,5 +1,19 @@
 <template>
     <div id="topbar">
-     12345
+      <div> 
+      resumer
+      </div>
+      <div>
+     <button>µÇÂ¼</button>
+     <button>×¢²á</button>
+      </div>
     </div>
 </template>
+<style>
+#topbar{
+min-height:100px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+</style>

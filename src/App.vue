@@ -33,25 +33,37 @@ export default {
   flex-direction: column;
 }
 .topbar{
- background:red;
+ background:white;
 }
 .editor{
-background:yellow;
+background:white;
 }
 .preview{
-background:green;
+background:white;
 }
 
 
 main{
  display:flex;
  flex:1;
+ background:#ddd;
  
 }
 main > .editor{
-  width:20em;
+  width:40em;
+  margin:16px 8px 16px 16px;
+  box-shadow:0 0 3px hsla(0,0,0,0.5);
+  border-radius:4px;
 }
 main > .preview{
   flex:1;
+  margin:16px 16px 16px 8px;
+  border-radius:4px;
 }
-</style>
+
+   .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }</style>
